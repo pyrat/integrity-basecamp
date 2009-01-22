@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'integrity'
-require File.dirname(__FILE__) + 'basecamp-api'
+require File.dirname(__FILE__) + '/basecamp-api.rb'
 
 module Integrity
   class Notifier
