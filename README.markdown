@@ -26,7 +26,7 @@ License
 
 (The MIT License)
 
-Copyright (c) 2008 Alastair Brunton
+Copyright (c) 2009 Alastair Brunton
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
