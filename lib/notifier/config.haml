@@ -1,0 +1,24 @@
+:username => 'robot', :domain => 'ifo.projectpath.com',
+#                         :password => 'robot', :project_id => 828898,
+#                         :category_id => 15509
+
+
+%p.normal
+  %label{ :for => "basecamp_notifier_account" } Subdomain
+  %input.text#basecamp_notifier_account{ :name => "notifiers[Basecamp][account]", :type => "text", :value => config["account"] }
+
+%p.normal
+  %label{ :for => "basecamp_notifier_room" } Project Id
+  %input.text#basecamp_notifier_project{ :name => "notifiers[Basecamp][project_id]", :type => "text", :value => config["project_id"] }
+
+%p.normal
+  %label{ :for => "basecamp_notifier_room" } Category Id
+  %input.text#basecamp_notifier_project{ :name => "notifiers[Basecamp][category_id]", :type => "text", :value => config["category_id"] }
+
+%p.normal
+  %label{ :for => "basecamp_notifier_user" } User
+  %input.text#basecamp_notifier_user{ :name => "notifiers[Basecamp][user]", :value => config["user"], :type => "text" }
+
+%p.normal
+  %label{ :for => "basecamp_notifier_pass" } Password
+  %input.text#basecamp_notifier_pass{ :name => "notifiers[Basecamp][pass]", :value => config["pass"], :type => "text" }
