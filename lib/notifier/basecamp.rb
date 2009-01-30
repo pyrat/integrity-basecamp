@@ -13,7 +13,7 @@ module Integrity
       
 
       def deliver!
-        basecamp = Basecamp.new(config['domain'], config['user'], config['pass'], true)
+        basecamp = BasecampApi.new(config['domain'], config['user'], config['pass'], true)
         message = {:title => short_message,
           :body => full_message,
         :category_id => config['category_id']}
@@ -30,7 +30,7 @@ module Integrity
         <<-EOM
 Commit Message: #{build.commit_message}
 Commit Date: #{build.commited_at}
-Commit Author: #{build.commit_author.name}
+Commit Author: #{build.commit_author}
 
 #{stripped_build_output}
 EOM

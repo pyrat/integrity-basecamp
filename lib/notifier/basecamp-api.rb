@@ -23,7 +23,7 @@ end
 #
 #   session = Basecamp.new('your.basecamp.com', 'username', 'password')
 #   puts "projects: #{session.projects.length}"
-class Basecamp
+class BasecampApi
   
   # A wrapper to encapsulate the data returned by Basecamp, for easier access.
   class Record #:nodoc:
