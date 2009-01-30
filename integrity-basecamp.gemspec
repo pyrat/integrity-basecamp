@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = 'integrity-basecamp'
-  s.version           = '0.2.6'
+  s.version           = '0.2.7'
   s.date              = '2009-01-22'
   s.summary           = 'Basecamp notifier for the Integrity continuous integration server.'
   s.description       = 'Easily let Integrity alert Basecamp after each build.'
@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.files             = %w( README.markdown lib/notifier/config.haml lib/notifier/basecamp.rb lib/notifier/basecamp-api.rb )
 
   s.add_dependency 'foca-integrity'
-  s.add_dependency 'xmlsimple'
+  s.add_dependency 'xml-simple'
 end
