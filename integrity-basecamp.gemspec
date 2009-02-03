@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = 'integrity-basecamp'
-  s.version           = '0.2.7'
+  s.version           = '0.2.8'
   s.date              = '2009-01-22'
   s.summary           = 'Basecamp notifier for the Integrity continuous integration server.'
   s.description       = 'Easily let Integrity alert Basecamp after each build.'
