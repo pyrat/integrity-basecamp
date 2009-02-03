@@ -30,7 +30,7 @@ module Integrity
         <<-EOM
 Commit Message: #{build.commit_message}
 Commit Date: #{build.commited_at}
-Commit Author: #{build.commit_author}
+Commit Author: #{build.commit_author.name}
 
 #{stripped_build_output}
 EOM
