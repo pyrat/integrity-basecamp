@@ -13,7 +13,7 @@ module Integrity
       
 
       def deliver!
-        basecamp = BasecampApi.new(config['domain'], config['user'], config['pass'])
+        basecamp = BasecampApi.new(config['account'], config['user'], config['pass'], false)
         message = {:title => short_message,
           :body => full_message,
         :category_id => config['category_id']}
