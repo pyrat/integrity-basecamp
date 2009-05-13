@@ -23,7 +23,7 @@ module Integrity
     private
 
       def short_message
-        "Build #{build.short_commit_identifier} of #{build.project.name} #{build.successful? ? "was successful" : "failed"}"
+        "Build #{build.short_commit_identifier} of #{build.project.name} (#{build.commit_author.name}) #{build.successful? ? "was successful" : "failed"}"
       end
 
       def full_message
