@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email             = 'info@simplyexcited.co.uk'
   s.authors           = ['Alastair Brunton']
   s.has_rdoc          = false
-  s.files             = %w( README.markdown lib/notifier/config.haml lib/notifier/basecamp.rb lib/notifier/basecamp-api.rb )
+  s.files             = %w( README.textile lib/notifier/config.haml lib/notifier/basecamp.rb lib/notifier/basecamp-api.rb )
 
   s.add_dependency 'foca-integrity'
   s.add_dependency 'xml-simple'
