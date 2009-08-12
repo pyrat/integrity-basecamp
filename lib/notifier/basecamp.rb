@@ -23,16 +23,16 @@ module Integrity
     private
 
       def short_message
-        "Build #{build.short_commit_identifier} of #{build.project.name} (#{build.commit_author.name}) #{build.successful? ? "was successful" : "failed"}"
+        "Build #{build.short_identifier} of #{build.project.name} (#{build.author.name}) #{build.successful? ? "was successful" : "failed"}"
       end
 
       def full_message
         <<-EOM
-Commit Message: #{build.commit_message}
+Commit Message: #{build.message}
 Commit Date: #{build.commited_at}
-Commit Author: #{build.commit_author.name}
+Commit Author: #{build.author.name}
 
-#{stripped_build_output}
+#{build.output}
 EOM
       end
       
