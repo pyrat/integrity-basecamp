@@ -16,6 +16,7 @@ pyrat-integrity-basecamp` and then in your Rackup (ie, `config.ru`) file:
 
     require "rubygems"
     require "notifier/basecamp"
+	Integrity::Notifier.register(Integrity::Notifier::Basecamp)
 
 Now you can set up your projects to alert Basecamp after
 each build (just edit the project and the config options should be 
