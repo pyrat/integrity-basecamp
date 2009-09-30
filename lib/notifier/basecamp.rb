@@ -29,7 +29,7 @@ module Integrity
       def full_message
         <<-EOM
 Commit Message: #{build.message}
-Commit Date: #{build.commited_at}
+Commit Date: #{build.committed_at}
 Commit Author: #{build.author.name}
 
 #{build.output}
